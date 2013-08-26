@@ -1,0 +1,8 @@
+#!/bin/bash
+
+/usr/bin/defaults write /Library/MonitoringClient/ClientSettings ClientGroup -string "Change this Client Group"
+
+/bin/chmod -R 755 /Library/MonitoringClient/
+
+
+
