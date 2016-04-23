@@ -18,13 +18,14 @@ Usage
 - Edit the postinstallation to contain the desired Group by placing the desired group name in between the quotes.
 
 
-    /usr/bin/defaults write /Library/MonitoringClient/ClientSettings ClientGroup -string "Change this Client Group"
+    `/usr/bin/defaults write /Library/MonitoringClient/ClientSettings ClientGroup -string "ENTER_GROUP_NAME"`
 
 
-- Add any other tasks you need run at the same time. 
+- Add any other tasks you need run, each on their own line (following normal bash syntax)
+
+Double Click on ![Packages icon](Resources/packages.png)`com.monitoringclient.clientgroup.pkgproj` 
 
 
-Double Click on `com.monitoringclient.clientgroup.pkgproj` 
 
 Once Packages is open, choosing Build from the Build menu (or typing Command B) will create the package in the "Build" folder.
 
