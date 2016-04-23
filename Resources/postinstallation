@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # Use defaults to set the Client Group
-/usr/bin/defaults write /Library/MonitoringClient/ClientSettings ClientGroup -string "Change this Client Group"
+/usr/bin/defaults write /Library/MonitoringClient/ClientSettings ClientGroup -string "ENTER_GROUP_NAME"
+
+
 
 
 # Defaults is going to create the folder we want, but only root can get to it. 
-# While the Monitoring Client installer accounts for this, things look a little clearer if users can see into the folder right away.
+# While the Monitoring Client installer would correct this on first run, things look a little clearer if users can see into the folder right away.
 
 /bin/chmod -R 755 /Library/MonitoringClient/
 
